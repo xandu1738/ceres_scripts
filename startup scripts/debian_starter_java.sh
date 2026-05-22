@@ -26,10 +26,12 @@ echo "[+] Installing Java 17"
 sudo apt install openjdk-17-jre
 sudo apt install openjdk-17-jdk	
 
-echo "[+] Installing Java 18"
-sudo apt install openjdk-18-jre
-sudo apt install openjdk-18-jdk
+echo "[+] Installing Java 21"
+sudo apt install openjdk-21-jre
+sudo apt install openjdk-21-jdk
 
+echo "[+] setting default java version "
+sudo update-alternatives --config java
 
 echo "[+] Installing PostgreSQL"
 sudo sh -c 'echo "deb https://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
