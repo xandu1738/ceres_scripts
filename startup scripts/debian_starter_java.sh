@@ -11,6 +11,10 @@ echo "[+] Updating and upgrading"
 sudo apt-get update
 sudo apt-get upgrade -y
 
+echo "[*] Installing default Java"
+sudo apt install default-jre
+sudo apt install default-jdk
+
 echo "[+] Installing Java 8"
 sudo apt install openjdk-8-jre
 sudo apt install openjdk-8-jdk
@@ -21,6 +25,11 @@ sudo apt install default-jdk
 echo "[+] Installing Java 17"
 sudo apt install openjdk-17-jre
 sudo apt install openjdk-17-jdk	
+
+echo "[+] Installing Java 18"
+sudo apt install openjdk-18-jre
+sudo apt install openjdk-18-jdk
+
 
 echo "[+] Installing PostgreSQL"
 sudo sh -c 'echo "deb https://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
