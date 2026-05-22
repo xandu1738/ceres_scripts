@@ -66,7 +66,8 @@ sudo service php8.2-fpm start
 sudo service php8.3-fpm start
 sudo service php8.4-fpm start
 
-
+echo "[+] setting default php version "
+sudo update-alternatives --config php
 
 
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
